@@ -16,8 +16,18 @@ toggleLight.onmouseleave = () => {
 }
 
 // Toggle
+function toggleAlert() {
+    let toggleAlert = document.querySelector("#toggle-alert");
+    let alertButton = document.querySelector("#toggle-button");
+    if (toggleAlert.innerHTML === "Hello World!") {
+        (toggleAlert.innerHTML = " ") && (alertButton.innerHTML = "Off");
+    } else {
+        (toggleAlert.innerHTML = "Hello World!") && (alertButton.innerHTML = "On");
+    }
+}
 
 // Validate
+
 
 // Challenge: Lists
 
