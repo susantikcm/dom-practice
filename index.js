@@ -30,7 +30,9 @@ document.querySelector('#form-validate button').addEventListener('click', () => 
 });
 
 // Challenge: Lists
-document.querySelector('#form-hobby').addEventListener('submit', () => {
+document.querySelector('#form-hobby').addEventListener('submit', (event) => {
+    event.preventDefault();
+    
     const item = document.createElement('li');
     item.innerText = document.querySelector('#form-hobby-text').value;
     item.classList.add('list-group-item');
